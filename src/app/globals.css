@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #06070a;
+  --color-foreground: #e4e4e7;
+
+  --color-card: #0d0f14;
+  --color-card-foreground: #e4e4e7;
+
+  --color-popover: #0d0f14;
+  --color-popover-foreground: #e4e4e7;
+
+  --color-primary: #4c8dff;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #14161c;
+  --color-secondary-foreground: #e4e4e7;
+
+  --color-muted: #101217;
+  --color-muted-foreground: #9aa0ac;
+
+  --color-accent: #14161c;
+  --color-accent-foreground: #e4e4e7;
+
+  --color-violet: #7c5cfc;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+
+  --color-warning: #f59e0b;
+  --color-warning-foreground: #1a1206;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-input: rgba(255, 255, 255, 0.08);
+  --color-ring: #4c8dff;
+
+  --radius: 0.75rem;
+
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-space-grotesk), var(--font-sans);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
